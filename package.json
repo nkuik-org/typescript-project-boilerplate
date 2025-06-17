@@ -28,7 +28,7 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.0.0",
     "@total-typescript/tsconfig": "1.0.4",
     "@types/node": "22.15.3",
     "husky": "9.1.7",
