@@ -2,6 +2,8 @@
 
 A minimal, modern boilerplate for starting new TypeScript projects. Includes essential tooling like formatting, linting, testing, and automated dependency updates. Designed to be easily understood and modified, including by AI assistants.
 
+> **AI/Agent Friendly**: This project includes detailed guidance for AI coding agents. See [AGENTS.md](AGENTS.md) for comprehensive instructions on working with this codebase.
+
 ## Features
 
 - **TypeScript**: Configured for modern Node.js environments.
@@ -11,6 +13,7 @@ A minimal, modern boilerplate for starting new TypeScript projects. Includes ess
 - **Renovate**: Configured for automatic dependency updates via GitHub Actions.
 - **GitHub Actions**: Basic CI workflow for building and testing.
 - **Strict Type Checking**: Encourages robust code.
+- **AI/Agent Documentation**: Comprehensive guide for AI coding assistants and automation tools.
 
 ## Getting Started
 
@@ -42,6 +45,16 @@ A minimal, modern boilerplate for starting new TypeScript projects. Includes ess
 - `pnpm check`: Runs all `check:*` scripts.
 - `pnpm build`: Compiles TypeScript code (add build configuration if needed).
 - `pnpm test`: Runs tests using Vitest.
+
+## For AI Agents and Assistants
+
+This project is designed to be AI-friendly. If you're an AI coding agent or assistant working with this codebase, please refer to **[AGENTS.md](AGENTS.md)** for:
+
+- Detailed project structure explanation
+- Command reference and usage guidelines
+- Best practices for making changes
+- Common pitfalls to avoid
+- Testing and validation procedures
 
 ## Contributing
 
