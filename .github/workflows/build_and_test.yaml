@@ -16,7 +16,7 @@ jobs:
       - name: Enable Corepack
         run: npm i -g corepack@latest && corepack enable
 
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v3
         with:
           install: true # [default: true] run `mise install`
           cache: true # [default: true] cache mise using GitHub's cache
