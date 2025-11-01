@@ -2,7 +2,7 @@
 
 A minimal, modern boilerplate for starting new TypeScript projects. Includes essential tooling like formatting, linting, testing, and automated dependency updates. Designed to be easily understood and modified, including by AI assistants.
 
-> **AI/Agent Friendly**: This project includes detailed guidance for AI coding agents. See [AGENTS.md](AGENTS.md) for comprehensive instructions on working with this codebase.
+> **AI/Agent Friendly**: This project includes detailed guidance for AI coding agents. See [.github/copilot-instructions.md](.github/copilot-instructions.md) for comprehensive instructions on working with this codebase.
 
 ## Features
 
@@ -48,7 +48,7 @@ A minimal, modern boilerplate for starting new TypeScript projects. Includes ess
 
 ## For AI Agents and Assistants
 
-This project is designed to be AI-friendly. If you're an AI coding agent or assistant working with this codebase, please refer to **[AGENTS.md](AGENTS.md)** for:
+This project is designed to be AI-friendly. If you're an AI coding agent or assistant working with this codebase, please refer to **[.github/copilot-instructions.md](.github/copilot-instructions.md)** for:
 
 - Detailed project structure explanation
 - Command reference and usage guidelines

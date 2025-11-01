@@ -1,6 +1,6 @@
-# Guide for AI Agents and Assistants
+# GitHub Copilot Instructions
 
-This document provides guidance for AI coding agents, AI assistants, and automated tools working with this TypeScript project boilerplate. It's designed to help GenAI systems understand the project structure and make appropriate modifications.
+This document provides guidance for GitHub Copilot, AI coding agents, and automated tools working with this TypeScript project boilerplate.
 
 ## Project Overview
 
@@ -93,7 +93,41 @@ describe("myFunction", () => {
 5. **Run tests**: Execute `pnpm test` to verify functionality
 6. **Build the project**: Run `pnpm build` to ensure it compiles successfully
 
-### Updating Dependencies
+## Workflow
+
+1. Install dependencies: `pnpm install`
+2. Make code changes in `src/`
+3. Add/update tests co-located with source files
+4. Format code: `pnpm format`
+5. Fix linting: `pnpm biome:fix`
+6. Run all checks: `pnpm check`
+7. Run tests: `pnpm test`
+8. Build: `pnpm build`
+
+## Common Patterns
+
+### Adding a new module
+1. Create `src/module-name.ts`
+2. Create `src/module-name.test.ts`
+3. Use `.js` extensions in imports
+4. Export types and functions explicitly
+
+### TypeScript Configuration
+- Extends `@total-typescript/tsconfig`
+- Strict mode enabled
+- ESNext module resolution
+- Outputs to `dist/`
+
+## Common Pitfalls to Avoid
+
+1. **Don't use npm or yarn**: This project uses pnpm exclusively
+2. **Don't skip the build step**: Always verify `pnpm build` succeeds
+3. **Don't ignore linting errors**: Run `pnpm check` and address all issues
+4. **Don't forget test updates**: Update or add tests when changing functionality
+5. **Don't commit generated files**: The `dist/` directory is gitignored and should not be committed
+6. **Don't omit `.js` extensions in imports**: Required for ESM modules
+
+## Updating Dependencies
 
 When updating dependencies:
 
@@ -101,14 +135,6 @@ When updating dependencies:
 2. **Update lock file**: Use `pnpm install` to update `pnpm-lock.yaml`
 3. **Test after updates**: Always run `pnpm test` and `pnpm build` after updating dependencies
 4. **Check for breaking changes**: Review changelogs for major version updates
-
-### Common Pitfalls to Avoid
-
-1. **Don't use npm or yarn**: This project uses pnpm exclusively
-2. **Don't skip the build step**: Always verify `pnpm build` succeeds
-3. **Don't ignore linting errors**: Run `pnpm check` and address all issues
-4. **Don't forget test updates**: Update or add tests when changing functionality
-5. **Don't commit generated files**: The `dist/` directory is gitignored and should not be committed
 
 ## Configuration Files
 
@@ -137,6 +163,12 @@ This boilerplate includes GitHub Actions workflows. When making changes:
 - Tests run automatically on push/PR
 - All checks must pass before merging
 
+## Version Requirements
+
+- **Node.js**: Use the version specified in `mise.toml` or `.nvmrc` (if present)
+- **pnpm**: Version managed by corepack (see `packageManager` field in package.json)
+- **TypeScript**: Version specified in package.json devDependencies
+
 ## Questions or Issues?
 
 If you encounter unexpected behavior or need clarification:
@@ -144,12 +176,6 @@ If you encounter unexpected behavior or need clarification:
 2. Review the error messages carefully
 3. Consult the documentation for the specific tool (TypeScript, Vitest, Biome)
 4. Run `pnpm check` to see all validation issues at once
-
-## Version Requirements
-
-- **Node.js**: Use the version specified in `mise.toml` or `.nvmrc` (if present)
-- **pnpm**: Version managed by corepack (see `packageManager` field in package.json)
-- **TypeScript**: Version specified in package.json devDependencies
 
 ## Useful References
 
